@@ -5,13 +5,10 @@
         <label>House Ignivar Archives</label>
         <description>The Ignivar Archives hold the collected knowledge of the house, from flame-forged crafts to the secrets of the magma wastes.</description>
         <baseCost>1000</baseCost>
-        <tab>DankPyon_MedievalResearchTab</tab>
+        <tab>ISA_MedievalResearchTab</tab>
         <techLevel>Medieval</techLevel>
-        <researchViewX>6</researchViewX>
-        <researchViewY>3</researchViewY>
-        <prerequisites>
-            <li>DankPyon_CarrierBirds</li>
-        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>6</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -19,12 +16,12 @@
         <label>The Fyrlance</label>
         <description>A hidden order within House Ignivar, the Flamesmiths craft weapons of fire and destruction, the brilliance of their designs matched only by their ruthlessness on the battlefield.</description>
         <baseCost>1600</baseCost>
-        <tab>DankPyon_MedievalResearchTab</tab>
+        <tab>ISA_MedievalResearchTab</tab>
         <techLevel>Medieval</techLevel>
-        <researchViewX>8</researchViewX>
-        <researchViewY>5.40</researchViewY>
+        <researchViewX>1</researchViewX>
+        <researchViewY>6</researchViewY>
         <prerequisites>
-            <li>DankPyon_Tar</li>
+            <li>IgnivarArchives</li>
         </prerequisites>
     </ResearchProjectDef>
 
