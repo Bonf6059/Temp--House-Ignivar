@@ -18,11 +18,6 @@
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
 				</li>
-				<li Class="ScenPart_ScatterThingsAnywhere">
-					<def>ScatterThingsAnywhere</def>
-					<thingDef>DankPyon_BrokenCart</thingDef>
-					<count>3</count>
-				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Silver</thingDef>
@@ -30,7 +25,7 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DankPyon_DriedMeat</thingDef>
+					<thingDef>ISA_DriedMeat</thingDef>
 					<count>100</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
@@ -46,7 +41,7 @@
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>DankPyon_IronIngot</thingDef>
+					<thingDef>Steel</thingDef>
 					<count>200</count>
 					<allowRoofed>True</allowRoofed>
 				</li>
@@ -56,20 +51,20 @@
 					<count>400</count>
 					<allowRoofed>True</allowRoofed>
 				</li>
-				<li Class="ScenPart_StartingThing_Defined">
+				<!--<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>DankPyon_ComponentBasic</thingDef>
 					<count>15</count>
-				</li>
+				</li>-->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DankPyon_MealRations</thingDef>
+					<thingDef>ISA_Bread</thingDef>
 					<count>30</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Ignivar_Mail</thingDef>
-					<stuff>DankPyon_IronIngot</stuff>
+					<stuff>Steel</stuff>
 					<quality>Normal</quality>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
@@ -81,7 +76,7 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Ignivar_ForgePike</thingDef>
-					<stuff>DankPyon_IronIngot</stuff>
+					<stuff>Steel</stuff>
 					<quality>Normal</quality>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
