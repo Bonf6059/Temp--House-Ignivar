@@ -38,8 +38,8 @@
         <soundInteract>Interact_Rifle</soundInteract>
         <costList>
             <Steel>80</Steel>
-            <DankPyon_Tar>30</DankPyon_Tar>
-            <DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>
+            <Chemfuel>30</Chemfuel>
+           <!-- <DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>    -->
         </costList>
         <weaponTags>
             <li>Ignivar_Weapon_Gun</li>
@@ -65,11 +65,11 @@
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>DankPyon_AlchemyBench</li>
+                <li>ISA_AlchemyTable</li>
             </recipeUsers>
             <researchPrerequisites>
                 <li>IgnivarArchives</li>
-                <li>DankPyon_Gunpowder</li>
+                <li>ISA_WarChemicals</li>
                 <li>Smithing</li>
             </researchPrerequisites>
             <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -168,8 +168,8 @@
         <soundInteract>Interact_Rifle</soundInteract>
         <costList>
             <Steel>80</Steel>
-            <DankPyon_Tar>30</DankPyon_Tar>
-            <DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>
+            <Chemfuel>30</Chemfuel>
+            <!--<DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>-->
         </costList>
         <weaponTags>
             <li>Ignivar_Weapon_Fire</li>
@@ -192,7 +192,7 @@
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>DankPyon_AlchemyBench</li>
+                <li>ISA_AlchemyTable</li>
             </recipeUsers>
             <researchPrerequisites>
                 <li>IgnivarArchives</li>
@@ -272,7 +272,7 @@
         <possessionCount>1</possessionCount>
         <researchPrerequisites>
             <li>IgnivarArchives</li>
-            <li>DankPyon_Alchemy</li>
+            <li>ISA_WarChemicals</li>
         </researchPrerequisites>
         <tickerType>Normal</tickerType>
         <graphicData>
@@ -289,7 +289,7 @@
         </statBases>
         <costList>
             <Cloth>25</Cloth>
-            <DankPyon_Tar>80</DankPyon_Tar>
+            <Chemfuel>80</Chemfuel>
         </costList>
         <weaponTags>
             <li>Ignivar_Weapon_Grenade</li>
