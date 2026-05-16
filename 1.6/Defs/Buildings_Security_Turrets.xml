@@ -49,7 +49,7 @@
             <showFuelGizmo>true</showFuelGizmo>
             <fuelFilter>
                 <thingDefs>
-                    <li>DankPyon_Tar</li>
+                    <li>Chemfuel</li>
                 </thingDefs>
             </fuelFilter>
             <fuelConsumptionRate>1</fuelConsumptionRate>
@@ -68,8 +68,8 @@
     <hasInteractionCell>true</hasInteractionCell>
     <costList>
         <WoodLog>100</WoodLog>
-        <DankPyon_IronIngot>30</DankPyon_IronIngot>
-        <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+        <Steel>30</Steel>
+        <!--<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>-->
     </costList>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
