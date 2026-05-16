@@ -52,10 +52,11 @@
 				<maxWildness>0.70</maxWildness>
 				<tradeTagsSell>
 					<li>AnimalUncommon</li>
-          <li>AnimalFarm</li>
+          			<li>AnimalMagma</li>
 				</tradeTagsSell>
 				<tradeTagsBuy>
 					<li>AnimalExotic</li>
+					<li>AnimalMagma</li>
 				</tradeTagsBuy>
 				<kindCountRange>1~2</kindCountRange>
 				<countRange>2~4</countRange>
