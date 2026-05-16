@@ -118,6 +118,7 @@
         <tradeTags>
             <li>AnimalUncommon</li>
             <li>AnimalPet</li>
+            <li>AnimalMagma</li>
         </tradeTags>
     </ThingDef>
 
