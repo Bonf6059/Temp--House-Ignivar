@@ -127,9 +127,7 @@
                 <!--  Trader  -->
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <ISA_Magma_Merchant>1</ISA_Magma_Merchant>
-                    <ISA_Caravan_Medieval_Alchemist>1</ISA_Caravan_Medieval_Alchemist>
-                    <ISA_Caravan_Mythological>1</ISA_Caravan_Mythological>
+					<Tribal_Trader>1</Tribal_Trader>
                 </traders>
                 <carriers>
                     <GreatMonitorLizard MayRequire="Ludeon.Rimworld.Odyssey">6</GreatMonitorLizard>
@@ -279,9 +277,7 @@
                 <!--  Trader  -->
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <ISA_Magma_Merchant>1</ISA_Magma_Merchant>
-                    <ISA_Caravan_Medieval_Alchemist>1</ISA_Caravan_Medieval_Alchemist>
-                    <ISA_Caravan_Mythological>1</ISA_Caravan_Mythological>
+					<Tribal_Trader>1</Tribal_Trader>
                 </traders>
                 <carriers>
                     <GreatMonitorLizard MayRequire="Ludeon.Rimworld.Odyssey">6</GreatMonitorLizard>
