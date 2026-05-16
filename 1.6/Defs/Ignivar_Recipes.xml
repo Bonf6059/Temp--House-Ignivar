@@ -13,10 +13,10 @@
         <li>
             <filter>
                 <thingDefs>
-        <li>Ignivar_RawAshberry</li>
-        </thingDefs>
-        </filter>
-        <count>25</count>
+                    <li>Ignivar_RawAshberry</li>
+                </thingDefs>
+            </filter>
+            <count>25</count>
         </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -58,9 +58,9 @@
             </li>
             <li>
                 <filter>
-                    <categories>
+                    <thingDefs>
                         <li>ISA_Flour</li>
-                    </categories>
+                    </thingDefs>
                 </filter>
                 <count>0.15</count>
             </li>
@@ -69,24 +69,18 @@
             <Ignivar_AshberryPie>1</Ignivar_AshberryPie>
         </products>
         <fixedIngredientFilter>
-            <categories>
-                <li>ISA_Flour</li>
-            </categories>
             <thingDefs>
-                <li>Ignivar_RawAshberry</li>
-                
+                <li>ISA_Flour</li>
+                <li>Ignivar_RawAshberry</li>       
             </thingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
             </specialFiltersToDisallow>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
-            <categories>
-                <li>ISA_Flour</li>
-            </categories>
             <thingDefs>
+                <li>ISA_Flour</li>
                 <li>Ignivar_RawAshberry</li>
-                
             </thingDefs>
         </defaultIngredientFilter>
         <skillRequirements>
@@ -120,9 +114,9 @@
             </li>
             <li>
                 <filter>
-                    <categories>
+                    <thingDefs>
                         <li>ISA_Flour</li>
-                    </categories>
+                    </thingDefs>
                 </filter>
                 <count>0.45</count>
             </li>
@@ -131,24 +125,18 @@
             <Ignivar_AshberryPie>3</Ignivar_AshberryPie>
         </products>
         <fixedIngredientFilter>
-            <categories>
-                <li>ISA_Flour</li>
-            </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                
+                <li>ISA_Flour</li>
             </thingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
             </specialFiltersToDisallow>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
-            <categories>
-                <li>ISA_Flour</li>
-            </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                
+                <li>ISA_Flour</li>
             </thingDefs>
         </defaultIngredientFilter>
         <skillRequirements>
@@ -192,24 +180,18 @@
             <Ignivar_AshberryPie>9</Ignivar_AshberryPie>
         </products>
         <fixedIngredientFilter>
-            <categories>
-                <li>ISA_Flour</li>
-            </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                
+                <li>ISA_Flour</li>
             </thingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
             </specialFiltersToDisallow>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
-            <categories>
-                <li>ISA_Flour</li>
-            </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                
+                <li>ISA_Flour</li>
             </thingDefs>
         </defaultIngredientFilter>
         <skillRequirements>
