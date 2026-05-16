@@ -1,0 +1,611 @@
+<Defs>
+    <!-- Loyalist Pawnkinds -->
+
+    <PawnKindDef Name="IgnivarPawnKindBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>Ignivar_Faction</defaultFactionType>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>60</maxGenerationAge>
+        <canBeSapper>true</canBeSapper>
+        <isFighter>true</isFighter>
+        <gearHealthRange>1~2</gearHealthRange>
+        <apparelRequired>
+            <!--<li>DankPyon_Apparel_Braies</li>-->
+            <!--  Middle (legs)  -->
+            <!--<li>DankPyon_Handwear_GlovesLeather</li>-->
+            <!--  Middle (hands)  -->
+            <!--<li>DankPyon_Footwear_BootsLeather</li>-->
+            <!--  Middle (feet)  -->
+        </apparelRequired>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>12~20</initialResistanceRange>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <invNutrition>2.55</invNutrition>
+        <invFoodDef>ISA_DriedMeat</invFoodDef>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    </PawnKindDef>
+
+
+        <!-- Tier 0 Levy -->
+
+    <PawnKindDef ParentName="IgnivarPawnKindBase">
+        <defName>Ignivar_Levy</defName>
+        <label>Levy</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>400~600</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Hood</li>
+            <li>Ignivar_Robe</li>
+            <li>Ignivar_Toolbelt</li>
+            <li>Ignivar_Scarf</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+             <!-- Toolbelt -->
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Robe (Red) -->
+             <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+             <!-- Scarf -->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Hood (Red) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Worker</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>150~350</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Worker</li>
+            <li>ISA_Bludgeon</li>
+            <li>MedievalMeleeBasic</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+        <!-- Tier 1 Footman -->
+
+    <PawnKindDef ParentName="IgnivarPawnKindBase">
+        <defName>Ignivar_Footman</defName>
+        <label>Footman</label>
+        <combatPower>60</combatPower>
+        <apparelMoney>400~500</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+        </apparelTags>
+        <apparelRequired>
+            <li>Ignivar_Mail</li>
+            <li>Ignivar_Scarf</li>
+            <!--<li>DankPyon_ShieldHeater</li>-->
+        </apparelRequired>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <specificApparelRequirements>
+             <!-- Mail (Red) -->
+            <li>
+                <apparelLayer>Middle</apparelLayer>
+                <requiredTag>Ignivar_Medium</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+             <!-- Scarf -->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Headgear (Red) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+                        <!-- Shield (Red) -->
+            <!--<li>
+                <apparelLayer>VFEC_OuterShell</apparelLayer>
+                <requiredTag>DankPyon_ShieldHeater</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>-->
+        </specificApparelRequirements>
+        <weaponMoney>250~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Light</li>
+            <li>Ignivar_Weapon_Medium</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li MayRequire="Owlchemist.GiddyUp" Class="GiddyUp.CustomMounts">
+                <mountChance>20</mountChance>
+                <possibleMounts>
+                    <li MayRequire="Ludeon.Rimworld.Odyssey">
+                        <key>GreatMonitorLizard</key>
+                    </li>
+                </possibleMounts>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+
+
+    <!-- Tier 1 Ranged Gunner -->
+
+    <PawnKindDef ParentName="IgnivarPawnKindBase">
+        <defName>Ignivar_Gunner</defName>
+        <label>Gunner</label>
+        <combatPower>90</combatPower>
+        <apparelMoney>400~500</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Robe</li>
+            <li>Ignivar_Scarf</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <!-- Robe (Red) -->
+             <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+            <!-- Scarf-->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Hood (Red) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Worker</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>280~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Gun</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+    <!-- Tier 2 Knight -->
+
+    <PawnKindDef ParentName="IgnivarPawnKindBase">
+        <defName>Ignivar_Knight</defName>
+        <label>Knight</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>1000~1200</apparelMoney>
+        <apparelTags>
+            <!--<li>DankPyon_Knight</li>-->
+            <li>Ignivar_Heavy</li>
+            <!--<li>DankPyon_Peasant</li>-->
+        </apparelTags>
+        <apparelRequired>
+            <li>Ignivar_Plate</li>
+            <li>Ignivar_Barbute</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <requiredTag>Ignivar_Heavy</requiredTag>
+                <color>(153, 81, 81)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>400~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Heavy</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+    <!-- Tier 2 Ranged Flamesmith -->
+
+        <PawnKindDef ParentName="IgnivarPawnKindBase">
+        <defName>Ignivar_Flamesmith</defName>
+        <label>Flamesmith</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>700~1000</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Kettle_Face</li>
+            <li>Ignivar_Robe</li>
+            <li>Ignivar_Toolbelt</li>
+            <li>Ignivar_Scarf</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <!-- Toolbelt -->
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Robe (Red) -->
+             <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+            <!-- Scarf-->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Headgear (Red) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(158, 81, 81)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>400~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Fire</li>
+            <li>Ignivar_Weapon_Grenade</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!-- Exile Pawnkinds -->
+     
+    <PawnKindDef Name="IgnivarExilePawnKindBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>Ignivar_Exiles</defaultFactionType>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>60</maxGenerationAge>
+        <canBeSapper>true</canBeSapper>
+        <isFighter>true</isFighter>
+        <gearHealthRange>1~2</gearHealthRange>
+        <apparelRequired>
+            <!--<li>DankPyon_Apparel_Braies</li>-->
+            <!--  Middle (legs)  -->
+            <!--<li>DankPyon_Handwear_GlovesLeather</li>-->
+            <!--  Middle (hands)  -->
+            <!--<li>DankPyon_Footwear_BootsLeather</li>-->
+            <!--  Middle (feet)  -->
+        </apparelRequired>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>12~20</initialResistanceRange>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <invNutrition>2.55</invNutrition>
+        <invFoodDef>ISA_DriedMeat</invFoodDef>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+     </PawnKindDef>
+
+
+    <!-- Tier 0 Levy -->
+
+    <PawnKindDef ParentName="IgnivarExilePawnKindBase">
+        <defName>IgnivarExile_Levy</defName>
+        <label>Levy</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>400~600</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Hood</li>
+            <li>Ignivar_Robe</li>
+            <li>Ignivar_Toolbelt</li>
+            <li>Ignivar_Scarf</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <!-- Toolbelt -->
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Robe (Orange) -->
+             <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+            <!-- Scarf -->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Hood (Orange) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Worker</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>150~350</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Worker</li>
+            <li>ISA_Bludgeon</li>
+            <li>MedievalMeleeBasic</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+    <!-- Tier 1 Footman -->
+
+    <PawnKindDef ParentName="IgnivarExilePawnKindBase">
+        <defName>IgnivarExile_Footman</defName>
+        <label>Footman</label>
+        <combatPower>60</combatPower>
+        <apparelMoney>400~500</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Mail</li>
+            <li>Ignivar_Scarf</li>
+            <!--<li>DankPyon_ShieldHeater</li>-->
+        </apparelRequired>
+        <specificApparelRequirements>
+            <!-- Mail (Orange) -->
+            <li>
+                <apparelLayer>Middle</apparelLayer>
+                <requiredTag>Ignivar_Medium</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+            <!-- Scarf-->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Headgear (Orange) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+            <!-- Shield (Orange) -->
+            <!--<li>
+                <apparelLayer>VFEC_OuterShell</apparelLayer>
+                <requiredTag>DankPyon_ShieldHeater</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>-->
+        </specificApparelRequirements>
+        <weaponMoney>250~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Light</li>
+            <li>Ignivar_Weapon_Medium</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+    <!-- Tier 1 Ranged Gunner -->
+
+    <PawnKindDef ParentName="IgnivarExilePawnKindBase">
+        <defName>IgnivarExile_Gunner</defName>
+        <label>Gunner</label>
+        <combatPower>90</combatPower>
+        <apparelMoney>400~500</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Robe</li>
+            <li>Ignivar_Scarf</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <!-- Robe (Orange) -->
+             <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+            <!-- Scarf-->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Hood (Orange) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Worker</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>280~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Gun</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+    <!-- Tier 2 Knight -->
+
+    <PawnKindDef ParentName="IgnivarExilePawnKindBase">
+        <defName>IgnivarExile_Knight</defName>
+        <label>Knight</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>1000~1200</apparelMoney>
+        <apparelTags>
+            <!--<li>DankPyon_Knight</li>-->
+            <li>Ignivar_Heavy</li>
+            <!--<li>DankPyon_Peasant</li>-->
+        </apparelTags>
+        <apparelRequired>
+            <li>Ignivar_Plate</li>
+            <li>Ignivar_Barbute</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <requiredTag>Ignivar_Heavy</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>600~800</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Heavy</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+
+    <!-- Tier 2 Ranged Flamesmith -->
+
+        <PawnKindDef ParentName="IgnivarExilePawnKindBase">
+        <defName>IgnivarExile_Flamesmith</defName>
+        <label>Flamesmith</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>700~1000</apparelMoney>
+        <apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>IgnivarBlock</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Ignivar_Kettle_Face</li>
+            <li>Ignivar_Robe</li>
+            <li>Ignivar_Toolbelt</li>
+            <li>Ignivar_Scarf</li>
+        </apparelRequired>
+        <specificApparelRequirements>
+            <!-- Toolbelt -->
+            <li>
+                <apparelLayer>Shell</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Robe (Orange) -->
+             <li>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+            <!-- Scarf-->
+            <li>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+            </li>
+            <!-- Headgear (Orange) -->
+            <li>
+                <apparelLayer>Overhead</apparelLayer>
+                <requiredTag>Ignivar_Light</requiredTag>
+                <color>(168, 113, 56)</color>
+            </li>
+        </specificApparelRequirements>
+        <weaponMoney>400~600</weaponMoney>
+        <weaponTags>
+            <li>Ignivar_Weapon_Fire</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+</Defs>
