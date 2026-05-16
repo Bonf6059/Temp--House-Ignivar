@@ -7,7 +7,7 @@
         	<recipeUsers>
 				<li>ElectricSmithy</li>
 				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
+				<!--<li>DankPyon_Anvil</li>-->
 			</recipeUsers>
         </recipeMaker>
         <apparel>
@@ -32,7 +32,6 @@
             </skillRequirements>
             <displayPriority>205</displayPriority>
             <researchPrerequisites>
-                <li>DankPyon_ProtectiveClothing</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
         </recipeMaker>
@@ -89,7 +88,6 @@
             </skillRequirements>
             <displayPriority>205</displayPriority>
              <researchPrerequisites>
-                <li>DankPyon_ProtectiveClothing</li>
                 <li>IgnivarArchives</li>
                 <li>Smithing</li>
             </researchPrerequisites>
@@ -163,7 +161,6 @@
             </skillRequirements>
             <displayPriority>205</displayPriority>
             <researchPrerequisites>
-                <li>DankPyon_ProtectiveClothing</li>
                 <li>IgnivarArchives</li>
                 <li>Smithing</li>
             </researchPrerequisites>
