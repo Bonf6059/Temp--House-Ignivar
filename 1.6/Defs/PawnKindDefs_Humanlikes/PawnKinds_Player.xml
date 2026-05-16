@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ISA_Subject</defName>
+		<label>subject</label>
+		<race>Human</race>
+		<defaultFactionType>Ignivar_PlayerOutpost</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+
+		<apparelTags>
+            <li>Ignivar_Light</li>
+            <!--<li>DankPyon_Peasant</li>-->
+            <li>Ignivar_Worker</li>
+		</apparelTags>
+
+		<apparelMoney>200~800</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>
