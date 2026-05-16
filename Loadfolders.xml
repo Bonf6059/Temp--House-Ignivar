@@ -3,6 +3,5 @@
         <li>/</li>
         <li>1.6</li>
         <li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Mods/Odyssey</li>
-        <li IfModActive="EEG.MOxASF">1.6/Mods/MOxASF</li>
     </v1.6>
 </loadFolders>
