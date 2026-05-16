@@ -14,22 +14,22 @@
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <allowedCultures>
-        <li>DankPyon_OldWorlder</li>
+        <li>ISA_OldWorlder</li>
     </allowedCultures>
     <forageabilityFactor>1.7</forageabilityFactor>
-    <startingResearchTags>
+    <!--<startingResearchTags>
         <li>DankPyon_MedievalStart</li>
         <li>DankPyon_TavernOwner</li>
-    </startingResearchTags>
+    </startingResearchTags>-->
     <startingTechprintsResearchTags>
-        <li>DankPyon_MedievalStart</li>
+        <!--<li>DankPyon_MedievalStart</li>-->
         <li>TribalStart</li>
         <li>TribalStartTechprints</li>
     </startingTechprintsResearchTags>
     <apparelStuffFilter>
         <thingDefs>
             <li>Cloth</li>
-            <li>DankPyon_IronIngot</li>
+            <li>Steel</li>
         </thingDefs>
     </apparelStuffFilter>
     <recipePrerequisiteTags>
@@ -66,7 +66,7 @@
         <isPlayer>true</isPlayer>
         <pawnSingular>scion</pawnSingular>
         <pawnsPlural>scions</pawnsPlural>
-        <basicMemberKind>DankPyon_Subject</basicMemberKind>
+        <basicMemberKind>ISA_Subject</basicMemberKind>
         <techLevel>Medieval</techLevel>
     </FactionDef>
 </Defs>
