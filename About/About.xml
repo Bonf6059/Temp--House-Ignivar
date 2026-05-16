@@ -11,11 +11,11 @@
             <packageId>Ludeon.RimWorld.Odyssey</packageId>
             <displayName>Odyssey</displayName>
         </li>-->
-        <li>
-            <packageId>DankPyon.Medieval.Overhaul</packageId>
-            <displayName>Medieval Overhaul</displayName>
-            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926</steamWorkshopUrl>
-        </li>
+	  <li>
+		<packageId>ISA.Medieval</packageId>
+		<displayName>ISA-Medieval</displayName>
+		<downloadUrl>https://github.com/Bonf6059/ISA-Medieval</downloadUrl>
+	  </li>
     </modDependencies>
 	<loadAfter>
         <li>Ludeon.RimWorld</li>
