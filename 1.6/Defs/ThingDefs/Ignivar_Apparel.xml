@@ -8,7 +8,7 @@
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisites>
-                <li>DankPyon_ProtectiveClothing</li>
+                <li>ComplexClothing</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
             <skillRequirements>
@@ -72,7 +72,7 @@
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisites>
-                <li>DankPyon_ProtectiveClothing</li>
+                <li>ComplexClothing</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
             <skillRequirements>
@@ -126,7 +126,7 @@
             </bodyPartGroups>
             <wornGraphicPath>Apparel/IgnivarScarf/IgnivarScarf</wornGraphicPath>
             <layers>
-                <li>DankPyon_ShellAttachment</li>
+                <li>ISA_ShellAttachment</li>
             </layers>
             <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
             <canBeGeneratedToSatisfyToxicEnvironmentResistance>true</canBeGeneratedToSatisfyToxicEnvironmentResistance>
@@ -147,7 +147,7 @@
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisites>
-                <li>DankPyon_Engineering</li>
+                <li>Smithing</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
             <skillRequirements>
@@ -161,7 +161,7 @@
         </graphicData>
         <costList>
             <Steel>60</Steel>
-            <DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>
+            <!--<DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>-->
         </costList>
         <thingCategories>
             <li>Apparel</li>
@@ -205,7 +205,7 @@
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisites>
-                <li>DankPyon_ChainArmor</li>
+                <li>ISA_ChainArmors</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
             <skillRequirements>
@@ -338,7 +338,7 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
                 <li>Shell</li>
-                <li>DankPyon_ShellAttachment</li>
+                <li>ISA_ShellAttachment</li>
             </layers>
             <tags>
                 <li>Ignivar_Heavy</li>
