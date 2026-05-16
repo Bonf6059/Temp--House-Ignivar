@@ -1,6 +1,6 @@
    <Defs>
-   <!-- MO Mineshaft Addon -->
-    <RecipeDef ParentName="DankPyon_MineShaftBase">
+   <!-- Mineshaft Addon -->
+    <RecipeDef ParentName="ISA_MineShaftBase">
     <workerClass>Ignivar.RecipeWorker_ObsidianLavaOnly</workerClass>
     <defName>Ignivar_MakeObsidian</defName>
     <description>Mine deep down underground to obtain obsidian.</description>
@@ -9,7 +9,7 @@
     <jobString>Mining 1 obsidian.</jobString>
 
     <recipeUsers>
-        <li>DankPyon_MineShaft</li>
+        <li>ISA_MineShaft</li>
     </recipeUsers>
 
     <products>
@@ -17,7 +17,7 @@
     </products>
 </RecipeDef>
 
-    <RecipeDef ParentName="DankPyon_MineShaftBase">
+    <RecipeDef ParentName="ISA_MineShaftBase">
     <workerClass>Ignivar.RecipeWorker_ObsidianLavaOnly</workerClass>
     <defName>Ignivar_MakeObsidian5</defName>
     <description>Mine deep down underground to obtain obsidian.</description>
@@ -26,7 +26,7 @@
     <jobString>Mining 5 obsidian.</jobString>
 
     <recipeUsers>
-        <li>DankPyon_MineShaft</li>
+        <li>ISA_MineShaft</li>
     </recipeUsers>
 
     <products>
