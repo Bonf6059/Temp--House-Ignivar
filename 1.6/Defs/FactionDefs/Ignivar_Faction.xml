@@ -1,5 +1,5 @@
 <Defs>
-    <FactionDef ParentName="FactionBase">
+   <!-- <FactionDef ParentName="FactionBase">
         <defName>Ignivar_Faction</defName>
         <label>House Ignivar</label>
         <description>House Ignivar is a noble line tempered by the ashes of Mount Ignos, their
@@ -7,9 +7,9 @@
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>60</configurationListOrderPriority>
         <pawnSingular>Scion</pawnSingular>
-        <pawnsPlural>Scionsr</pawnsPlural>
+        <pawnsPlural>Scionsr</pawnsPlural>-->
         <!-- categoryTag>Outlander</categoryTag -->
-        <listOrderPriority>31</listOrderPriority>
+        <!--<listOrderPriority>31</listOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <canMakeRandomly>true</canMakeRandomly>
@@ -53,12 +53,12 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>-->
             <!--  Apparel  -->
-            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+            <!--<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>-->
             <!--  Nudity  -->
-            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+            <!--<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
@@ -100,9 +100,9 @@
             </points>
         </maxPawnCostPerTotalPointsCurve>
         <pawnGroupMakers>
-            <li>
+            <li>-->
                 <!--  Normal fights  -->
-                <kindDef>Combat</kindDef>
+                <!--<kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
                     <Ignivar_Levy>20</Ignivar_Levy>
@@ -112,9 +112,9 @@
                     <Ignivar_Flamesmith>30</Ignivar_Flamesmith>
                 </options>
             </li>
-            <li>
+            <li>-->
                 <!--  Peaceful  -->
-                <kindDef>Peaceful</kindDef>
+                <!--<kindDef>Peaceful</kindDef>
                 <options>
                     <Ignivar_Levy>20</Ignivar_Levy>
                     <Ignivar_Footman>25</Ignivar_Footman>
@@ -123,9 +123,9 @@
                     <Ignivar_Flamesmith>30</Ignivar_Flamesmith>
                 </options>
             </li>
-            <li>
+            <li>-->
                 <!--  Trader  -->
-                <kindDef>Trader</kindDef>
+                <!--<kindDef>Trader</kindDef>
                 <traders>
 					<Tribal_Trader>1</Tribal_Trader>
                 </traders>
@@ -144,7 +144,7 @@
         <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
         <permanentEnemy>false</permanentEnemy>
         <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
-    </FactionDef>
+    </FactionDef>-->
 
 
         <FactionDef ParentName="FactionBase">
