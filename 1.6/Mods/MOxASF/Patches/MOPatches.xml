@@ -8,14 +8,7 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Padded_Leather"]/apparel/tags</xpath>
-    <value>
-      <li>IgnivarBlock</li>
-    </value>
-  </Operation>
-
-    <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Light_Lamellar"]/apparel/tags</xpath>
+    <xpath>/Defs/ThingDef[defName="ISA_Apparel_Padded_Surcoat"]/apparel/tags</xpath>
     <value>
       <li>IgnivarBlock</li>
     </value>
