@@ -45,7 +45,7 @@
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <workAmount>950</workAmount>
         <recipeUsers>
-            <li>DankPyon_StoneOven</li>
+            <li>ISA_StoneOven</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -59,18 +59,10 @@
             <li>
                 <filter>
                     <categories>
-                        <li>DankPyon_Flour</li>
+                        <li>ISA_Flour</li>
                     </categories>
                 </filter>
                 <count>0.15</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>DankPyon_Sugar</li>
-                    </thingDefs>
-                </filter>
-                <count>0.1</count>
             </li>
         </ingredients>
         <products>
@@ -78,11 +70,11 @@
         </products>
         <fixedIngredientFilter>
             <categories>
-                <li>DankPyon_Flour</li>
+                <li>ISA_Flour</li>
             </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                <li>DankPyon_Sugar</li>
+                
             </thingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
@@ -90,21 +82,17 @@
         </fixedIngredientFilter>
         <defaultIngredientFilter>
             <categories>
-                <li>DankPyon_Flour</li>
+                <li>ISA_Flour</li>
             </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                <li>DankPyon_Sugar</li>
+                
             </thingDefs>
         </defaultIngredientFilter>
         <skillRequirements>
             <Cooking>10</Cooking>
         </skillRequirements>
         <workSkill>Cooking</workSkill>
-        <researchPrerequisites>
-            <li>DankPyon_AdvancedCooking</li>
-            <li>DankPyon_Oven</li>
-        </researchPrerequisites>
     </RecipeDef>
     <!--  Ash Berry Pie Bulk  -->
     <RecipeDef>
@@ -119,7 +107,7 @@
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <workAmount>2850</workAmount>
         <recipeUsers>
-            <li>DankPyon_StoneOven</li>
+            <li>ISA_StoneOven</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -133,18 +121,10 @@
             <li>
                 <filter>
                     <categories>
-                        <li>DankPyon_Flour</li>
+                        <li>ISA_Flour</li>
                     </categories>
                 </filter>
                 <count>0.45</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>DankPyon_Sugar</li>
-                    </thingDefs>
-                </filter>
-                <count>0.3</count>
             </li>
         </ingredients>
         <products>
@@ -152,11 +132,11 @@
         </products>
         <fixedIngredientFilter>
             <categories>
-                <li>DankPyon_Flour</li>
+                <li>ISA_Flour</li>
             </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                <li>DankPyon_Sugar</li>
+                
             </thingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
@@ -164,21 +144,17 @@
         </fixedIngredientFilter>
         <defaultIngredientFilter>
             <categories>
-                <li>DankPyon_Flour</li>
+                <li>ISA_Flour</li>
             </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                <li>DankPyon_Sugar</li>
+                
             </thingDefs>
         </defaultIngredientFilter>
         <skillRequirements>
             <Cooking>12</Cooking>
         </skillRequirements>
         <workSkill>Cooking</workSkill>
-        <researchPrerequisites>
-            <li>DankPyon_AdvancedCooking</li>
-            <li>DankPyon_Oven</li>
-        </researchPrerequisites>
     </RecipeDef>
     <RecipeDef>
         <defName>Ignivar_CookMealAshberryPieBulkier</defName>
@@ -192,7 +168,7 @@
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <workAmount>8550</workAmount>
         <recipeUsers>
-            <li>DankPyon_StoneOvenLarge</li>
+            <li>ISA_StoneOven</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -206,18 +182,10 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>DankPyon_Flour</li>
+                        <li>ISA_Flour</li>
                     </thingDefs>
                 </filter>
                 <count>1.35</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>DankPyon_Sugar</li>
-                    </thingDefs>
-                </filter>
-                <count>0.9</count>
             </li>
         </ingredients>
         <products>
@@ -225,11 +193,11 @@
         </products>
         <fixedIngredientFilter>
             <categories>
-                <li>DankPyon_Flour</li>
+                <li>ISA_Flour</li>
             </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                <li>DankPyon_Sugar</li>
+                
             </thingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
@@ -237,21 +205,17 @@
         </fixedIngredientFilter>
         <defaultIngredientFilter>
             <categories>
-                <li>DankPyon_Flour</li>
+                <li>ISA_Flour</li>
             </categories>
             <thingDefs>
                 <li>Ignivar_RawAshberry</li>
-                <li>DankPyon_Sugar</li>
+                
             </thingDefs>
         </defaultIngredientFilter>
         <skillRequirements>
             <Cooking>12</Cooking>
         </skillRequirements>
         <workSkill>Cooking</workSkill>
-        <researchPrerequisites>
-            <li>DankPyon_AdvancedCooking</li>
-            <li>DankPyon_Oven</li>
-        </researchPrerequisites>
     </RecipeDef>
 
 </Defs>
