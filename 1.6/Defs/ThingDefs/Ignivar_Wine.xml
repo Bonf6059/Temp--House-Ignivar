@@ -112,14 +112,6 @@
             <li>
                 <compClass>CompEquippable</compClass>
             </li>
-            <li>
-                <compClass>CompQuality</compClass>
-            </li>
-            <li Class="VEF.Cooking.CompProperties_IngestedThoughtFromQuality">
-                <ingestedThought>DankPyon_DrankWine</ingestedThought>
-            </li>
-            <li MayRequire="vanillaexpanded.vcooke"
-                Class="VEF.Cooking.CompProperties_StackByQuality" />
         </comps>
         <researchPrerequisites>
             <li>Brewing</li>
