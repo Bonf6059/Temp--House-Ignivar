@@ -74,7 +74,7 @@
         </tools>
         <recipeMaker>
             <researchPrerequisites>
-                <li>DankPyon_MilitaryBlades</li>
+                <li>LongBlades</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
             <skillRequirements>
@@ -201,7 +201,7 @@
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
         <costList>
-            <DankPyon_Tar>20</DankPyon_Tar>
+            <Chemfuel>20</Chemfuel>
         </costList>
         <statBases>
             <WorkToMake>75000</WorkToMake>
@@ -210,7 +210,7 @@
         <recipeMaker>
             <researchPrerequisites>
                 <li>IgnivarArchives</li>
-                <li>DankPyon_MilitaryMaces</li>
+                <li>ISA_BluntWeapons</li>
             </researchPrerequisites>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -293,7 +293,7 @@
         <uiIconScale>1.3</uiIconScale>
         <costStuffCount>50</costStuffCount>
         <costList>
-            <DankPyon_Tar>20</DankPyon_Tar>
+            <Chemfuel>20</Chemfuel>
         </costList>
         <statBases>
             <WorkToMake>20000</WorkToMake>
@@ -303,7 +303,7 @@
         <recipeMaker>
             <researchPrerequisites>
                 <li>IgnivarArchives</li>
-                <li>DankPyon_MilitaryPolearms</li>
+                <li>LongBlades</li>
             </researchPrerequisites>
             <skillRequirements>
                 <Crafting>6</Crafting>
