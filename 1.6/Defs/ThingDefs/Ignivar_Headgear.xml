@@ -16,9 +16,6 @@
         </apparel>
     </ThingDef>
 
-
-    
-
     <!-- Ignivar Hood -->
     <ThingDef ParentName="HatMakeableBase">
         <defName>Ignivar_Hood</defName>
@@ -32,6 +29,7 @@
             </skillRequirements>
             <displayPriority>205</displayPriority>
             <researchPrerequisites>
+				<li>ComplexClothing</li>
                 <li>IgnivarArchives</li>
             </researchPrerequisites>
         </recipeMaker>
