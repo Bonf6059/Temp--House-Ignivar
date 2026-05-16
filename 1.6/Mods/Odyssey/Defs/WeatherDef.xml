@@ -1,0 +1,167 @@
+<Defs>
+    <!-- Ash Drift-->
+    <WeatherDef>
+        <defName>IgnivarAshDrift</defName>
+        <label>Ash Drift</label>
+        <description>A light layer of ash is settling over the region, it is not too dangerous, however any living thing not suitably protected will start to suffer from its effects after some time.</description>
+        <temperatureRange>-10~100</temperatureRange>
+        <windSpeedFactor>0.2</windSpeedFactor>
+        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <favorability>Bad</favorability>
+        <perceivePriority>1</perceivePriority>
+        <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+        <durationRange>30000~90000</durationRange>
+        <overlayClasses>
+            <li>WeatherOverlay_AshDrift</li>
+        </overlayClasses>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+                <li>(4000, 2.0)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <skyColorsDay>
+            <sky>(0.82,0.82,0.82)</sky>
+            <shadow>(0.89,0.89,0.89)</shadow>
+            <overlay>(0.84,0.84,0.84)</overlay>
+            <saturation>0.83</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.83,0.83,0.83)</sky>
+            <shadow>(0.89,0.89,0.89)</shadow>
+            <overlay>(0.83,0.83,0.83)</overlay>
+            <saturation>0.83</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.81,0.81,0.81)</sky>
+            <shadow>(0.88,0.88,0.88)</shadow>
+            <overlay>(0.82,0.82,0.82)</overlay>
+            <saturation>0.83</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.80,0.80,0.80)</sky>
+            <shadow>(0.86,0.86,0.86)</shadow>
+            <overlay>(0.81,0.81,0.81)</overlay>
+            <saturation>0.83</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <!-- Ash Fall-->
+    <WeatherDef>
+        <defName>IgnivarAshFall</defName>
+        <label>Ash Fall</label>
+        <description>A light layer of ash is settling over the region, it is not too dangerous, however any living thing not suitably protected will start to suffer from its effects after some time.</description>
+        <temperatureRange>-10~100</temperatureRange>
+        <windSpeedFactor>0.2</windSpeedFactor>
+        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <favorability>Bad</favorability>
+        <perceivePriority>1</perceivePriority>
+        <rainRate>0</rainRate>
+        <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+        <letterDef>ThreatSmall</letterDef>
+        <letterLabel>Ash Fall</letterLabel>
+        <letterText>Poisonous ash is falling from the sky, keep your people and animals protected to ensure they are safe.</letterText>
+        <durationRange>60000~180000</durationRange>
+        <overlayClasses>
+            <li>WeatherOverlay_AshFall</li>
+        </overlayClasses>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+                <li>(4000, 2.0)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <!-- Colors are Overcast -->
+        <skyColorsDay>
+            <sky>(0.64,0.64,0.64)</sky>
+            <shadow>(0.78,0.78,0.78)</shadow>
+            <overlay>(0.67,0.67,0.67)</overlay>
+            <saturation>0.65</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.65,0.65,0.65)</sky>
+            <shadow>(0.78,0.78,0.78)</shadow>
+            <overlay>(0.66,0.66,0.66)</overlay>
+            <saturation>0.65</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.62,0.62,0.62)</sky>
+            <shadow>(0.75,0.75,0.75)</shadow>
+            <overlay>(0.64,0.64,0.64)</overlay>
+            <saturation>0.65</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.60,0.60,0.60)</sky>
+            <shadow>(0.72,0.72,0.72)</shadow>
+            <overlay>(0.62,0.62,0.62)</overlay>
+            <saturation>0.65</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <!-- Ash Storm-->
+    <WeatherDef>
+        <defName>IgnivarAshStorm</defName>
+        <label>Ash Storm</label>
+        <description>An ash storm is rolling over the region, Any living thing not under a roof or suitably protected will slowly suffer from its effects.</description>
+        <temperatureRange>-10~100</temperatureRange>
+        <windSpeedFactor>2.5</windSpeedFactor>
+        <accuracyMultiplier>0.7</accuracyMultiplier>
+        <favorability>VeryBad</favorability>
+        <perceivePriority>1</perceivePriority>
+        <rainRate>0</rainRate>
+        <moveSpeedMultiplier>0.7</moveSpeedMultiplier>
+        <letterDef>ThreatBig</letterDef>
+        <letterText>An ash storm is rolling over the region, Any living thing not under a roof or suitably protected will slowly suffer from its effects.</letterText>
+        <letterLabel>Ash Storm</letterLabel>
+        <durationRange>60000~240000</durationRange>
+        <eventMakers>
+            <li>
+                <averageInterval>1200</averageInterval>
+                <eventClass>WeatherEvent_LightningFlash</eventClass>
+            </li>
+            <li>
+                <averageInterval>1200</averageInterval>
+                <eventClass>WeatherEvent_LightningStrike</eventClass>
+            </li>
+        </eventMakers>
+        <overlayClasses>
+            <li>WeatherOverlay_AshStorm</li>
+        </overlayClasses>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+                <li>(4000, 2.0)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <!-- Colors are Overcast -->
+          <skyColorsDay>
+            <sky>(0.28,0.28,0.28)</sky>
+            <shadow>(0.55,0.55,0.55)</shadow>
+            <overlay>(0.35,0.35,0.35)</overlay>
+            <saturation>0.3</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.30,0.30,0.30)</sky>
+            <shadow>(0.55,0.55,0.55)</shadow>
+            <overlay>(0.32,0.32,0.32)</overlay>
+            <saturation>0.3</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.25,0.25,0.25)</sky>
+            <shadow>(0.50,0.50,0.50)</shadow>
+            <overlay>(0.28,0.28,0.28)</overlay>
+            <saturation>0.3</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.22,0.22,0.22)</sky>
+            <shadow>(0.45,0.45,0.45)</shadow>
+            <overlay>(0.25,0.25,0.25)</overlay>
+            <saturation>0.3</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+
+</Defs>

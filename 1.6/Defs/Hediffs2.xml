@@ -1,0 +1,32 @@
+<Defs>
+<!-- Ash Resistance -->
+
+    <HediffDef>
+        <defName>Ignivar_ToxResist</defName>
+        <label>Ashberry Wine Resistance</label>
+        <description>Ashberry Wine is improving the ash resistance of the user..</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.2</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li Name="potent">
+                <label>potent</label>
+                <minSeverity>0.65</minSeverity>
+                <statOffsets>
+                    <ToxicResistance>0.25</ToxicResistance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+
+    </Defs>

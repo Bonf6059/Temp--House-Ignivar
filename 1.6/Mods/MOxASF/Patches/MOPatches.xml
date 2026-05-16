@@ -1,0 +1,24 @@
+<!-- Add Raw Ashberries to Grape Barrel-->
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticGrapeBarrelEmpty"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+    <value>
+      <li>Ignivar_RawAshberry</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Padded_Leather"]/apparel/tags</xpath>
+    <value>
+      <li>IgnivarBlock</li>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="DankPyon_Apparel_Light_Lamellar"]/apparel/tags</xpath>
+    <value>
+      <li>IgnivarBlock</li>
+    </value>
+  </Operation>
+
+</Patch>

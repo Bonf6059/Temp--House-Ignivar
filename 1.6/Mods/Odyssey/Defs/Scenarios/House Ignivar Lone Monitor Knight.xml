@@ -1,0 +1,86 @@
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Ignivar_KnightStart</defName>
+		<label>House Ignivar Lone Knight</label>
+		<description>Whether scorned by a traitorous lord or on the hunt for glory of your own, you are now free and alone, except for your loyal lizard.</description>
+	<scenario>
+		<summary>A Lone Knight of House Ignivar</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>Ignivar_PlayerLone</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<pawnCount>1</pawnCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>DankPyon_BrokenCart</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DankPyon_DriedMeat</thingDef>
+					<count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ignivar_AshberryWine</thingDef>
+					<count>10</count>
+					<quality>Good</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>DankPyon_IronIngot</thingDef>
+					<count>100</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>200</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DankPyon_MealRations</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ignivar_Broadblade</thingDef>
+					<stuff>Steel</stuff>
+					<quality>Normal</quality>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Whether scorned by a traitorous lord or on the hunt for glory of your own, you are now free and alone, except for your loyal lizard.</text>
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+					<animalKind>GreatMonitorLizard</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

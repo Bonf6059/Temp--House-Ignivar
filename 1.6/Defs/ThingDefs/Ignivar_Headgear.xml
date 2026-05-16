@@ -1,0 +1,286 @@
+<Defs>
+
+    <!-- Helmet Base -->
+    <ThingDef Name="IgnivarHelmetMakeableBase" Abstract="True" ParentName="ArmorHelmetMakeableBase">
+        <techLevel>Medieval</techLevel>
+         <recipeMaker>
+        	<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+        </recipeMaker>
+        <apparel>
+            <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>true</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+        </apparel>
+    </ThingDef>
+
+
+    
+
+    <!-- Ignivar Hood -->
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>Ignivar_Hood</defName>
+        <label>Ignivar Hood</label>
+        <description>Worn by workers and light troops of House Ignivar, this tightly wrapped hood and face scarf combination is designed to guard the wearers breath against the ever-present ash of the magma wastes.</description>
+        <techLevel>Medieval</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+            <researchPrerequisites>
+                <li>DankPyon_ProtectiveClothing</li>
+                <li>IgnivarArchives</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Apparel/IgnivarHood/IgnivarHood</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <statBases>
+            <WorkToMake>2400</WorkToMake>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Mass>0.08</Mass>
+            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/IgnivarHood/IgnivarHood</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Ignivar_Worker</li>
+            </tags>
+                <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
+                <canBeGeneratedToSatisfyToxicEnvironmentResistance>true</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Ignivar Kettle -->
+    <ThingDef ParentName="IgnivarHelmetMakeableBase">
+        <defName>Ignivar_Kettle</defName>
+        <label>Ignivar Kettle Helm</label>
+        <description>Worn by the footmen of House Ignivar, this sturdy metal kettle helm with thick cloth scarf shields the wearer from choking ash and smoke.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+             <researchPrerequisites>
+                <li>DankPyon_ProtectiveClothing</li>
+                <li>IgnivarArchives</li>
+                <li>Smithing</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Apparel/IgnivarKettle/IgnivarKettle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>2.75</Mass>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+            <Cloth>30</Cloth>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/IgnivarKettle/IgnivarKettle</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Ignivar_Light</li>
+                <li>Ignivar_Medium</li>
+            </tags>
+        </apparel>
+        <!-- ColorTwo Stuff -->
+        <thingClass>ThingColor.ApparelColored</thingClass>
+        <colorGenerator IsNull="True" />
+        <modExtensions>
+            <li Class="ThingColor.ThingExtension">
+                <colorOneStuff>
+                    <li>Fabric</li>
+                </colorOneStuff>
+                <colorTwoStuff>
+                    <li>Metallic</li>
+                </colorTwoStuff>
+            </li>
+        </modExtensions>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Ignivar Kettle with Faceplate -->
+    <ThingDef ParentName="IgnivarHelmetMakeableBase">
+        <defName>Ignivar_Kettle_Face</defName>
+        <label>Ignivar Faceplate Kettle Helm</label>
+        <description>Used by House Ignivar’s infantry, this kettle helm with scarf and reinforced metal upper faceplate offers extra protection in the harshest ash-choked conditions.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+            <researchPrerequisites>
+                <li>DankPyon_ProtectiveClothing</li>
+                <li>IgnivarArchives</li>
+                <li>Smithing</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Apparel/IgnivarFaceKettle/IgnivarFaceKettle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>2.75</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
+        <costList>
+            <Cloth>30</Cloth>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/IgnivarFaceKettle/IgnivarFaceKettle</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Ignivar_Light</li>
+                <li>Ignivar_Medium</li>
+            </tags>
+        </apparel>
+        <!-- ColorTwo Stuff -->
+        <thingClass>ThingColor.ApparelColored</thingClass>
+        <colorGenerator IsNull="True" />
+        <modExtensions>
+            <li Class="ThingColor.ThingExtension">
+                <colorOneStuff>
+                    <li>Fabric</li>
+                </colorOneStuff>
+                <colorTwoStuff>
+                    <li>Metallic</li>
+                </colorTwoStuff>
+            </li>
+        </modExtensions>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Ignivar Barbute -->
+    <ThingDef ParentName="IgnivarHelmetMakeableBase">
+        <defName>Ignivar_Barbute</defName>
+        <label>Ignivar Barbute</label>
+        <description>Worn by the heavy infantry of House Ignivar, this visored barbute helmet provides strong, practical protection in battle, worn with an internal cloth mask to guard the wearer’s breath against ash in the harsh conditions of the Lava Fields.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+            <researchPrerequisites>
+                <li>PlateArmor</li>
+                <li>IgnivarArchives</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Apparel/IgnivarBarbute/IgnivarBarbute</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <statBases>
+            <WorkToMake>16000</WorkToMake>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>2.75</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>90</costStuffCount>
+        <costList>
+            <Cloth>30</Cloth>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/IgnivarBarbute/IgnivarBarbute</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Ignivar_Heavy</li>
+            </tags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+</Defs>

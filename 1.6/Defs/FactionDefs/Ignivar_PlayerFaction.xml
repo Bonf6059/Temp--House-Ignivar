@@ -1,0 +1,72 @@
+<Defs>
+    <FactionDef ParentName="PlayerFactionBase" Abstract="True" Name="Ignivar_PlayerFactionBase">
+    <techLevel>Medieval</techLevel>
+    <backstoryFilters>
+        <li>
+            <categories>
+                <li>Tribal</li>
+            </categories>
+        </li>
+    </backstoryFilters>
+    <factionIconPath>WorldObjects/Ignos</factionIconPath>
+    <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures>
+        <li>DankPyon_OldWorlder</li>
+    </allowedCultures>
+    <forageabilityFactor>1.7</forageabilityFactor>
+    <startingResearchTags>
+        <li>DankPyon_MedievalStart</li>
+        <li>DankPyon_TavernOwner</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+        <li>DankPyon_MedievalStart</li>
+        <li>TribalStart</li>
+        <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+        <thingDefs>
+            <li>Cloth</li>
+            <li>DankPyon_IronIngot</li>
+        </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+        <li>Tribal</li>
+    </recipePrerequisiteTags>
+    </FactionDef>
+
+    <FactionDef ParentName="Ignivar_PlayerFactionBase">
+        <defName>Ignivar_PlayerOutpost</defName>
+        <label>House Ignivar Outpost</label>
+        <description>A small outpost.</description>
+        <isPlayer>true</isPlayer>
+        <pawnSingular>scion</pawnSingular>
+        <pawnsPlural>scions</pawnsPlural>
+        <basicMemberKind>Ignivar_PlayerLevy</basicMemberKind>
+        <techLevel>Medieval</techLevel>
+    </FactionDef>
+
+    <FactionDef ParentName="Ignivar_PlayerFactionBase">
+        <defName>Ignivar_PlayerLone</defName>
+        <label>A Lone Ignivar Knight</label>
+        <description>A small outpost.</description>
+        <isPlayer>true</isPlayer>
+        <pawnSingular>scion</pawnSingular>
+        <pawnsPlural>scions</pawnsPlural>
+        <basicMemberKind>Ignivar_PlayerKnight</basicMemberKind>
+        <techLevel>Medieval</techLevel>
+    </FactionDef>
+
+    <FactionDef ParentName="Ignivar_PlayerFactionBase">
+        <defName>Ignivar_PlayerExiles</defName>
+        <label>Ignivar Exile Band</label>
+        <description>A small outpost.</description>
+        <isPlayer>true</isPlayer>
+        <pawnSingular>scion</pawnSingular>
+        <pawnsPlural>scions</pawnsPlural>
+        <basicMemberKind>DankPyon_Subject</basicMemberKind>
+        <techLevel>Medieval</techLevel>
+    </FactionDef>
+</Defs>

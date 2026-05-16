@@ -1,0 +1,89 @@
+<Defs>
+    <!--  Ashberry Plant  -->
+
+<ThingDef ParentName="PlantBase" Name="PlantAshberry">
+    <defName>Ignivar_Plant_Ashberry</defName>
+    <label>Ashberry Plant</label>
+    <description>The Ashberry is a hardy, bitter fruit that clings to the slopes of the magma wastes, thriving in the ash-laden soil where few other plants can survive.</description>
+    <statBases>
+        <MaxHitPoints>85</MaxHitPoints>
+        <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+        <texPath>Plants/Mature</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+        <growDays>5</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>Ignivar_RawAshberry</harvestedThingDef>
+        <harvestYield>8</harvestYield>
+        <sowMinSkill>5</sowMinSkill>
+        <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+        </sowTags>
+        <topWindExposure>0.1</topWindExposure>
+        <immatureGraphicPath>Plants/Immature</immatureGraphicPath>
+        <visualSizeRange>0.3~1.05</visualSizeRange>
+        <wildOrder>2</wildOrder>
+        <purpose>Food</purpose>
+        <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+</ThingDef>
+
+  <!--  Ashberry Food  -->
+
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>Ignivar_RawAshberry</defName>
+        <label>Ash Berries</label>
+        <description>Ashberries, small and bitter yet surprisingly flavorful, and most famed for being fermented into the strong, dark Ashberry wine, a staple of House Ignivar.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Plants/RawAshberry</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+            <Nutrition>0.05</Nutrition>
+            <Mass>0.027</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought />
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="MealCooked">
+        <defName>Ignivar_AshberryPie</defName>
+        <label>Ashberry Pie</label>
+        <description>A hearty pastry filled with tart ashberries, lightly sweetened to temper their natural bitterness. Baked over the glowing coals of volcanic hearths, it is a warming treat, often served alongside mugs of dark Ashberry wine during long ashstorms.</description>
+        <graphicData>
+            <texPath>Items/AshberryPie</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>75</MarketValue>
+            <WorkToMake>950</WorkToMake>
+            <Nutrition>0.8</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealLavish</preferability>
+            <tasteThought>Ignivar_AteAshberryPie</tasteThought>
+            <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+            <optimalityOffsetFeedingAnimals>-30</optimalityOffsetFeedingAnimals>
+        </ingestible>
+        <rotatable>false</rotatable>
+    </ThingDef>
+</Defs>

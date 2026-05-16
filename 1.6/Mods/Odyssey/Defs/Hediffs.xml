@@ -1,0 +1,91 @@
+<Defs>
+<!-- Ashborne Fever -->
+    <HediffDef>
+        <defName>AshborneFever</defName>
+        <label>Ashborne Fever</label>
+        <description>Poisonous Ash in the lungs. This has come from the savage ash storms that
+            brutalise the Magma Wastes.\n At high doses Ashborne Fever is lethal. Even at low doses
+            it can cause permanent lung damage and even poison the mind.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.55, 0.25, 0.25)</defaultLabelColor>
+        <lethalSeverity>1</lethalSeverity>
+        <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+        <makesSickThought>true</makesSickThought>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <taleOnVisible>AshbornefeverRevealed</taleOnVisible>
+        <comps>
+            <li Class="HediffCompProperties_Immunizable">
+                <compClass>HediffComp_ImmunizableAsh</compClass>
+                <severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>initial</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <label>initial</label>
+                <minSeverity>0.04</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.2</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>moderate</label>
+                <minSeverity>0.40</minSeverity>
+                <vomitMtbDays>5</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>146</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>serious</label>
+                <minSeverity>0.60</minSeverity>
+                <vomitMtbDays>1</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>37</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+
+
+</Defs>

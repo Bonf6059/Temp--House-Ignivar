@@ -1,0 +1,33 @@
+<ModMetaData>
+    <name>Medieval Overhaul: House Ignivar</name>
+    <author>Big T</author>
+	<supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+	<packageId>BigT.HouseIgnivar</packageId>
+    <description>Adds House Ignivar, a Medieval Faction to be used with Medieval Overhaul, features new weapons, apparel, food and more!</description>
+    <modDependencies>
+        <!--<li>
+            <packageId>Ludeon.RimWorld.Odyssey</packageId>
+            <displayName>Odyssey</displayName>
+        </li>-->
+        <li>
+            <packageId>DankPyon.Medieval.Overhaul</packageId>
+            <displayName>Medieval Overhaul</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+	<loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+        <li>DankPyon.Medieval.Overhaul</li>
+        <li>Sierra.RF.MedievalOverhaul</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
+        <li>syrchalis.processor.framework</li>
+	</loadAfter>
+</ModMetaData>

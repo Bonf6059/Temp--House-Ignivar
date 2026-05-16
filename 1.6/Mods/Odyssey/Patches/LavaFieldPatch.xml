@@ -1,0 +1,95 @@
+<Patch>
+<!-- Adding GML -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="LavaField"]/wildAnimals</xpath>
+    <value>
+      <GreatMonitorLizard>0.5</GreatMonitorLizard>
+    </value>
+  </Operation>
+
+<!-- Adding Ash Weather -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/baseWeatherCommonalities</xpath>
+    <value>
+      <IgnivarAshDrift>8</IgnivarAshDrift>
+      <IgnivarAshFall>4</IgnivarAshFall>
+      <IgnivarAshStorm>2</IgnivarAshStorm>
+    </value>
+  </Operation>
+<!-- Changing Lava Fields terrain -->
+    <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/wildPlants/Plant_TreeDrago</xpath>
+    <value>
+      <Plant_TreeDrago>0.4</Plant_TreeDrago>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/terrainsByFertility/li[terrain="VolcanicRock"]/max</xpath>
+    <value>
+      <max>0.55</max>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/terrainsByFertility/li[terrain="Soil"]/min</xpath>
+    <value>
+      <min>0.55</min>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/terrainsByFertility/li[terrain="Soil"]/max</xpath>
+    <value>
+      <max>0.75</max>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/terrainsByFertility/li[terrain="SoilRich"]/min</xpath>
+    <value>
+      <min>0.5</min>
+    </value>
+  </Operation>
+
+   <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/plantDensity</xpath>
+    <value>
+      <plantDensity>0.6</plantDensity>
+    </value>
+  </Operation>
+
+<!-- Changing Lava Fields Animals to survive Ash-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="LavaSnail"]/statBases</xpath>
+    <value>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ToxicResistance>1.0</ToxicResistance>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MonitorLizard"]/statBases</xpath>
+    <value>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ToxicResistance>1.0</ToxicResistance>
+    </value>
+  </Operation>
+
+  <!-- Increase lava lake scale (~50% larger formations) 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/terrainPatchMakers/li/perlinFrequency</xpath>
+    <value>
+      <perlinFrequency>0.023</perlinFrequency>
+    </value>
+  </Operation>
+
+   Slightly increase lava coverage 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/terrainPatchMakers/li/thresholds/li[terrain="LavaDeep"]/min</xpath>
+    <value>
+      <min>0.88</min>
+    </value>
+  </Operation>
+-->
+</Patch>

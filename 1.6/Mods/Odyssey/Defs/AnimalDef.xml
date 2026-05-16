@@ -1,0 +1,174 @@
+<Defs>
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>GreatMonitorLizard</defName>
+        <label>Great Monitor Lizard</label>
+        <description>A Monstrous variant of the Monitor Lizard, only found in the most dangerous areas of the world, it's large claws aren't nearly as deadly as their venomous bite.</description>
+        <modExtensions>
+            <li MayRequire="Owlchemist.GiddyUp" Class="GiddyUp.Mountable" />
+        </modExtensions>
+        <statBases>
+            <MoveSpeed>5.5</MoveSpeed>
+            <MarketValue>2200</MarketValue>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>90</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+            <ToxicResistance>0.9</ToxicResistance>
+            <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Wildness>0.35</Wildness>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>ToxicBite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>EggGreatMonitorLizardUnfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>EggGreatMonitorLizardFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>8</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+            <predator>true</predator>
+            <maxPreyBodySize>0.80</maxPreyBodySize>
+            <baseBodySize>1.4</baseBodySize>
+            <baseHealthScale>3</baseHealthScale>
+            <baseHungerRate>0.8</baseHungerRate>
+            <foodType>CarnivoreAnimal</foodType>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.70</manhunterOnDamageChance>
+            <packAnimal>true</packAnimal>
+            <petness>0.55</petness>
+            <lifeExpectancy>24</lifeExpectancy>
+            <soundEating>Reptile_Eat</soundEating>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2222</minAge>
+                    <soundWounded>Pawn_Alligator_Wounded</soundWounded>
+                    <soundDeath>Pawn_Alligator_Death</soundDeath>
+                    <soundCall>Pawn_Alligator_Call</soundCall>
+                    <soundAngry>Pawn_Alligator_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <headPosPerRotation>
+                <li>(-0.01, 0, 0.3)</li>
+                <li>(0.35, 0, 0.05)</li>
+                <li>(0.0, 0, -0.24)</li>
+                <li>(-0.35, 0, 0.05)</li>
+            </headPosPerRotation>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>GreatMonitorLizard</defName>
+        <label>Great Monitor Lizard</label>
+        <race>GreatMonitorLizard</race>
+        <combatPower>400</combatPower>
+        <ecoSystemWeight>0.6</ecoSystemWeight>
+        <wildGroupSize>2~3</wildGroupSize>
+        <alternateGraphicChance>0.8</alternateGraphicChance>
+        <alternateGraphics>
+            <li><texPath>Animals/GreatMonitorLizard/GreatMonitor1</texPath></li>
+            <li><texPath>Animals/GreatMonitorLizard/GreatMonitor2</texPath></li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/GreatMonitorLizard/GreatMonitor</texPath>
+                    <drawSize>3.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MonitorLizard/Dessicated_MonitorLizard</texPath>
+                    <drawSize>3.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/GreatMonitorLizard/GreatMonitor</texPath>
+                    <drawSize>4.4</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MonitorLizard/Dessicated_MonitorLizard</texPath>
+                    <drawSize>4.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animals/GreatMonitorLizard/GreatMonitor</texPath>
+                    <drawSize>4.8</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MonitorLizard/Dessicated_MonitorLizard</texPath>
+                    <drawSize>4.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

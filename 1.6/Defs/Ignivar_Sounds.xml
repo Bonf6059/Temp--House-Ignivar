@@ -1,0 +1,16 @@
+<Defs>
+<SoundDef>
+    <defName>cindergonnefire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+        <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                    <clipFolderPath>ignivar_cindergonnefire</clipFolderPath>
+                </li>
+            </grains>
+        </li>
+    </subSounds>
+</SoundDef>
+</Defs>

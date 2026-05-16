@@ -1,0 +1,39 @@
+<Defs>
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>EggGreatMonitorLizardUnfertilized</defName>
+        <label>Great monitor lizard egg (unfert.)</label>
+        <description>An unfertilized Great monitor lizard egg. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>60.0</MarketValue>
+            <Nutrition>0.8</Nutrition>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>EggGreatMonitorLizardFertilized</defName>
+        <label>Great monitor lizard egg (fert.)</label>
+        <description>A fertilized Great monitor lizard egg. If all goes well, it should hatch into a baby Great monitor lizard. It can be eaten raw, but it's much better cooked.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <drawSize>2</drawSize>
+            <color>(245,245,245)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>200.0</MarketValue>
+            <Nutrition>0.8</Nutrition>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>8</hatcherDaystoHatch>
+                <hatcherPawn>GreatMonitorLizard</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
