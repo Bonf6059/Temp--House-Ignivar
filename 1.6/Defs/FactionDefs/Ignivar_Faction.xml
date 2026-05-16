@@ -22,7 +22,6 @@
         <techLevel>Medieval</techLevel>
         <apparelStuffFilter>
             <thingDefs>
-                <li>DankPyon_IronIngot</li>
                 <li>Steel</li>
                 <li>Leather_Plain</li>
             </thingDefs>
@@ -34,7 +33,7 @@
         </colorSpectrum>
         <fixedName>House Ignivar</fixedName>
         <allowedCultures>
-            <li>DankPyon_OldWorlder</li>
+            <li>ISA_OldWorlder</li>
         </allowedCultures>
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
@@ -90,7 +89,7 @@
             </li>
         </backstoryFilters>
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-        <raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+        <raidLootMaker>ISA_MedievalRaidLootMaker</raidLootMaker>
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(100,400)</li>
@@ -128,7 +127,9 @@
                 <!--  Trader  -->
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+                    <ISA_Magma_Merchant>1</ISA_Magma_Merchant>
+                    <ISA_Caravan_Medieval_Alchemist>1</ISA_Caravan_Medieval_Alchemist>
+                    <ISA_Caravan_Mythological>1</ISA_Caravan_Mythological>
                 </traders>
                 <carriers>
                     <GreatMonitorLizard MayRequire="Ludeon.Rimworld.Odyssey">6</GreatMonitorLizard>
@@ -172,7 +173,6 @@
         <techLevel>Medieval</techLevel>
         <apparelStuffFilter>
             <thingDefs>
-                <li>DankPyon_IronIngot</li>
                 <li>Steel</li>
                 <li>Leather_Plain</li>
             </thingDefs>
@@ -184,7 +184,7 @@
         </colorSpectrum>
         <fixedName>House Ignivar Exiles </fixedName>
         <allowedCultures>
-            <li>DankPyon_OldWorlder</li>
+            <li>ISA_OldWorlder</li>
         </allowedCultures>
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
@@ -240,7 +240,7 @@
             </li>
         </backstoryFilters>
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-        <raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+        <raidLootMaker>ISA_MedievalRaidLootMaker</raidLootMaker>
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(100,400)</li>
@@ -279,7 +279,9 @@
                 <!--  Trader  -->
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+                    <ISA_Magma_Merchant>1</ISA_Magma_Merchant>
+                    <ISA_Caravan_Medieval_Alchemist>1</ISA_Caravan_Medieval_Alchemist>
+                    <ISA_Caravan_Mythological>1</ISA_Caravan_Mythological>
                 </traders>
                 <carriers>
                     <GreatMonitorLizard MayRequire="Ludeon.Rimworld.Odyssey">6</GreatMonitorLizard>
@@ -297,5 +299,21 @@
         <permanentEnemy>false</permanentEnemy>
         <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
     </FactionDef>
+
+	<ThingSetMakerDef>
+		<defName>ISA_MedievalRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>MedicineHerbal</li>
+						<li>ISA_Bread</li>
+						<li>ISA_DriedMeat</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
 
 </Defs>
