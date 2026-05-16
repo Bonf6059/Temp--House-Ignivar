@@ -12,11 +12,11 @@
         <isFighter>true</isFighter>
         <gearHealthRange>1~2</gearHealthRange>
         <apparelRequired>
-            <li>DankPyon_Apparel_Braies</li>
+            <!--<li>DankPyon_Apparel_Braies</li>-->
             <!--  Middle (legs)  -->
-            <li>DankPyon_Handwear_GlovesLeather</li>
+            <!--<li>DankPyon_Handwear_GlovesLeather</li>-->
             <!--  Middle (hands)  -->
-            <li>DankPyon_Footwear_BootsLeather</li>
+            <!--<li>DankPyon_Footwear_BootsLeather</li>-->
             <!--  Middle (feet)  -->
         </apparelRequired>
         <initialWillRange>2~4</initialWillRange>
@@ -26,7 +26,7 @@
         </requiredWorkTags>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
-        <invFoodDef>DankPyon_MealRations</invFoodDef>
+        <invFoodDef>ISA_DriedMeat</invFoodDef>
     </PawnKindDef>
 
 
@@ -40,7 +40,7 @@
         <apparelMoney>400~600</apparelMoney>
         <apparelTags>
             <li>Ignivar_Light</li>
-            <li>DankPyon_Peasant</li>
+            <!--<li>DankPyon_Peasant</li>-->
             <li>Ignivar_Worker</li>
         </apparelTags>
         <apparelDisallowTags>
@@ -66,7 +66,7 @@
             </li>
              <!-- Scarf-->
             <li>
-                <apparelLayer>DankPyon_ShellAttachment</apparelLayer>
+                <apparelLayer>ISA_ShellAttachment</apparelLayer>
                 <requiredTag>Ignivar_Light</requiredTag>
             </li>
             <!-- Hood (Red) -->
@@ -95,9 +95,9 @@
         <factionLeader>true</factionLeader>
         <apparelMoney>1000~1200</apparelMoney>
         <apparelTags>
-            <li>DankPyon_Knight</li>
+            <!--<li>DankPyon_Knight</li>-->
             <li>Ignivar_Heavy</li>
-            <li>DankPyon_Peasant</li>
+            <!--<li>DankPyon_Peasant</li>-->
         </apparelTags>
         <apparelRequired>
             <li>Ignivar_Plate</li>
