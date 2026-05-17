@@ -5,6 +5,7 @@
 		<defName>ISA_Magma_Merchant</defName>
 		<label>lava fields merchant</label>
 		<commonality>3</commonality>
+		<faction>Ignivar_Faction</faction>
 
 		<stockGenerators>
       
