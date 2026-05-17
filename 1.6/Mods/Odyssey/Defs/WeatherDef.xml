@@ -45,7 +45,6 @@
             <overlay>(0.81,0.81,0.81)</overlay>
             <saturation>0.83</saturation>
         </skyColorsNightMid>
-        <canBePermanent>true</canBePermanent>
     </WeatherDef>
 
     <!-- Ash Fall-->
@@ -99,7 +98,6 @@
             <overlay>(0.62,0.62,0.62)</overlay>
             <saturation>0.65</saturation>
         </skyColorsNightMid>
-        <canBePermanent>true</canBePermanent>
     </WeatherDef>
 
     <!-- Ash Storm-->
@@ -163,7 +161,6 @@
             <overlay>(0.25,0.25,0.25)</overlay>
             <saturation>0.3</saturation>
         </skyColorsNightMid>
-        <canBePermanent>true</canBePermanent>
     </WeatherDef>
 
 
