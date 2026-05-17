@@ -100,6 +100,14 @@
                 <li>(100000, 10000)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
+		<baseTraderKinds>
+      		<li>ISA_Magma_Merchant</li>
+    	</baseTraderKinds>
+    	<caravanTraderKinds>
+      		<li>ISA_Magma_Merchant</li>
+      		<li>ISA_Caravan_Medieval_Alchemist</li>
+			<li>ISA_Caravan_Mythological</li>
+    	</caravanTraderKinds>
         <pawnGroupMakers>
             <li>
                 <!--  Normal fights  -->
