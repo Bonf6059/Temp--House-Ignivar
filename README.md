@@ -6,6 +6,7 @@ Description
 
 - Look at stoneborn faction expansion for the trade faction base and update the faction in this mod otherwise the bases will only trade what the magma merchant does
 - Update the magma merchant
+- Update faction description
 
 # Old updates
 
