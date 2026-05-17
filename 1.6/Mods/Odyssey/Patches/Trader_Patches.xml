@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="LavaSnail"]/tradeTags</xpath>
+		<value>
+			<li>AnimalMagma</li>
+		</value>
+	</Operation>
+	
+  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Vulture"]/tradeTags</xpath>
+		<value>
+			<li>AnimalMagma</li>
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="MonitorLizard"]/tradeTags</xpath>
+		<value>
+			<li>AnimalMagma</li>
+		</value>
+	</Operation>
+
+</Patch>
