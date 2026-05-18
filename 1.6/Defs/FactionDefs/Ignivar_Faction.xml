@@ -4,7 +4,7 @@
     <FactionDef ParentName="FactionBase">
         <defName>Ignivar_Faction</defName>
         <label>House Ignivar</label>
-        <description>House Ignivar is a noble line tempered by the ashes of Mount Ignos, their warriors and arms forged to endure fire, ash, and adversity where others would falter. They have expanded outside of their native lava fields but are as reclusive as ever refusing to trade with anyone</description>
+        <description>House Ignivar is a noble line tempered by the ashes of Mount Ignos, their warriors and arms forged to endure fire, ash, and adversity where others would falter. They have expanded outside of their native lava fields but they are hardy as ever.</description>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>60</configurationListOrderPriority>
         <pawnSingular>Scion</pawnSingular>
@@ -19,6 +19,12 @@
         <fixedLeaderKinds>
             <li>Ignivar_Knight</li>
         </fixedLeaderKinds>
+		<xenotypeSet Inherit="False">
+      		<xenotypeChances>
+				<Impid>0.1</Impid>
+				<Baseliner>0.6</Baseliner>
+      		</xenotypeChances>
+    	</xenotypeSet>
         <factionIconPath>WorldObjects/Ignos</factionIconPath>
         <techLevel>Medieval</techLevel>
         <apparelStuffFilter>
@@ -159,7 +165,7 @@
     <FactionDef ParentName="FactionBase">
         <defName>Ignivar_Exiles</defName>
         <label>House Ignivar Exiles</label>
-        <description>House Ignivar is a noble line tempered by the ashes of Mount Ignos, their warriors and arms forged to endure fire, ash, and adversity where others would falter. They have expanded outside of their native lava fields but are as reclusive as ever refusing to trade with anyone.</description>
+        <description>House Ignivar is a noble line tempered by the ashes of Mount Ignos, their warriors and arms forged to endure fire, ash, and adversity where others would falter. They have expanded outside of their native lava fields but they are hardy as ever.</description>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>60</configurationListOrderPriority>
         <pawnSingular>Exile</pawnSingular>
