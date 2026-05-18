@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!--  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName="Ignivar_Faction"]</xpath>
+      <value>
+        <xenotypeSet Inherit="False"/>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet/xenotypeChances</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName="Ignivar_Faction"]xenotypeSet</xpath>
+      <value>
+        <xenotypeChances />
+      </value>
+    </nomatch>
+  </Operation>  -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet/xenotypeChances</xpath>
+    <value>
+      <DV_Bogleg>0.15</DV_Bogleg>
+    </value>
+  </Operation>
+
+</Patch>
