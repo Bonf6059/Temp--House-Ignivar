@@ -2,9 +2,9 @@
 <Patch>
 
 <!--  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet</xpath>
+    <xpath>Defs/FactionDef[defName="Ignivar_Faction" or defName="Ignivar_Exiles"]/xenotypeSet</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/FactionDef[defName="Ignivar_Faction"]</xpath>
+      <xpath>Defs/FactionDef[defName="Ignivar_Faction" or defName="Ignivar_Exiles"]</xpath>
       <value>
         <xenotypeSet Inherit="False"/>
       </value>
@@ -12,9 +12,9 @@
   </Operation>
 
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet/xenotypeChances</xpath>
+    <xpath>Defs/FactionDef[defName="Ignivar_Faction" or defName="Ignivar_Exiles"]/xenotypeSet/xenotypeChances</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/FactionDef[defName="Ignivar_Faction"]xenotypeSet</xpath>
+      <xpath>Defs/FactionDef[defName="Ignivar_Faction" or defName="Ignivar_Exiles"]xenotypeSet</xpath>
       <value>
         <xenotypeChances />
       </value>
@@ -22,7 +22,7 @@
   </Operation>  -->
   
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet/xenotypeChances</xpath>
+    <xpath>Defs/FactionDef[defName="Ignivar_Faction" or defName="Ignivar_Exiles"]/xenotypeSet/xenotypeChances</xpath>
     <value>
       <DV_Keshig>0.5</DV_Keshig>
     </value>
