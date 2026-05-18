@@ -24,7 +24,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/FactionDef[defName="Ignivar_Faction"]/xenotypeSet/xenotypeChances</xpath>
     <value>
-      <DV_Halffoot>0.3</DV_Halffoot>
+      <DV_Halffoot>0.25</DV_Halffoot>
     </value>
   </Operation>
 
