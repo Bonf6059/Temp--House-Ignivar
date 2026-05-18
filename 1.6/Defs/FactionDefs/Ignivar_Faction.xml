@@ -183,6 +183,12 @@
         </fixedLeaderKinds>
         <factionIconPath>WorldObjects/Ignos</factionIconPath>
         <techLevel>Medieval</techLevel>
+		<xenotypeSet Inherit="False">
+      		<xenotypeChances>
+				<Impid>0.1</Impid>
+				<Baseliner>0.6</Baseliner>
+      		</xenotypeChances>
+    	</xenotypeSet>
         <apparelStuffFilter>
             <thingDefs>
                 <li>Steel</li>
