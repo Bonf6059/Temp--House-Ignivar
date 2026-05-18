@@ -10,5 +10,9 @@ Description
 
 # Old updates
 
+18/05/2026
+- Added new xenotype to the factions
+- Updated description
+
 17/05/2026
 - Initial release; removed dependecy from medieval overhaul
