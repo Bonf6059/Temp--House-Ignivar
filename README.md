@@ -1,4 +1,4 @@
-# Temp--House-Ignivar
+# ISA-House-Ignivar
 
 Description
 
@@ -11,4 +11,4 @@ Description
 # Old updates
 
 17/05/2026
-- Initial release
+- Initial release; removed dependecy from medieval overhaul
