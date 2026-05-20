@@ -44,8 +44,8 @@
             <manWorkType>Violent</manWorkType>
         </li>
         <li Class="CompProperties_Refuelable">
-            <fuelLabel>Tar</fuelLabel>
-            <fuelGizmoLabel>Tar</fuelGizmoLabel>
+            <fuelLabel>Chemfuel</fuelLabel>
+            <fuelGizmoLabel>Chemfuel</fuelGizmoLabel>
             <showFuelGizmo>true</showFuelGizmo>
             <fuelFilter>
                 <thingDefs>
@@ -59,7 +59,7 @@
             <fuelMultiplier>1</fuelMultiplier>
             <factorByDifficulty>true</factorByDifficulty>
             <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-            <outOfFuelMessage>Cannot shoot: Needs Tar</outOfFuelMessage>
+            <outOfFuelMessage>Cannot shoot: Needs chemfuel</outOfFuelMessage>
             <fuelIconPath>Items/TarAmmo</fuelIconPath>
             <initialFuelPercent>0</initialFuelPercent>
         </li>
